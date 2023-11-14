@@ -1,0 +1,60 @@
+@charset "UTF8";
+body{
+    background-color: #d699e050;
+}
+main{
+    background-color: aliceblue;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    margin: auto;
+    border-radius:20px ;
+}
+h1{
+    background-color:#592561a9 ;
+    color: white;
+    text-align: center;
+}
+p{
+    text-align:justify;
+    background-color:#D699E0 ;
+}
+.titulo2{
+    background-color: #5D4261;
+    text-align: right;
+    padding-right: 10px;
+}
+.texto2{
+    text-align: right;
+    padding-right: 10px;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+}
+.fim{
+    text-align: center;
+}
+.fim > a{
+display: none;
+}
+.fim:hover > a{
+    display: block;
+}
+a{
+    margin: auto;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+}
+a::after{
+    content: " ⊴";
+}
+a::before{
+    content: "⊵ ";
+}
+a:hover{
+    text-decoration: underline;
+}

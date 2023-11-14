@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Teste abrindo em dispositivos diferentes ou altere o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="Foto Grande">
+    </picture>
+    <p>deu certo?</p>
+    <h1>Adicionando audios</h1>
+    <audio src="./midia/Sunny Day - Reed Mathis.mp3" controls preload="none"></audio>
+    <h1>Incorporando video</h1>
+    <p>Conseguimos tambem colocar videos  em nossos sites</p>
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/sSvH3e3oeXk?si=y3jvMWVaJL2fJUoX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <video width="400" poster="imagens/fotop.png" controls>
+    <source src="midia/VID-20221120-WA0014.mp4" type="video/mp4" autoplay   
+    </video>
+</html>

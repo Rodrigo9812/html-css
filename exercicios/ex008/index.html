@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html semantico</title>
+    <style>
+        mark {background-color: aqua;}
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>O Html semantico &#x1F929</h1>
+    <h2> Palavras e frases em Negrito</h2>
+    <p>Agora com o html5 podemos colocar as letras e textos em negrito usando a tag STRONG ,para dar força a <strong> palavra ou frase</strong> digitada.</p>
+    <h2>Tambem temos o Italico</h2>
+    <p>Alem do negrito, para dar enfase em alguma frase ou palavra usamos a tag "EM" para dar <em>Enfase a frase</em>.</p>
+    <h3>Juntando as tags</h3>
+    <p>Tambem é possivel juntar as tags de <strong><em>negrito e italico</em></strong></p>
+    <h2>Textos Marcados</h2>
+    <p>Para deixar um <mark>texto marcado</mark> usamos a tag "MARK", ele vai ser nossa caneta marca textos.<br>Alem disso podemos mudar a cor da marcação <mark>usando o parametro "style" e alterando a cor</mark>, porem a tag é individual, existe um meio de adicionar a mesma cor a todas as tags mark em CSS adicionando no "head" a tag "style" e selecionando a tag "mark", em seguida escolhendo a cor para as tags, para funcionar as tags mark nao podem ter cores nenhuma, deve estar apenas "mark".</p>
+    <h2>Tamanho das letras</h2>
+    <p>Antigamente em html5 era possivel aumentar a letra usando a tag BIG, porem essa tag ficou obsoleta, hoje em dia essa alteraçao é feita em CSS,<br> contudo, ainda é possivel <small>diminuir as palavras ou frases</small> usando a tag small.</p>
+    <h2>Textos deletados</h2>
+    <p>Tambem é possivel adicionar <del>Textos deletados</del> a seus paragrafos, basta utilizar a tag "del", para colocar uma linha em textos que nao sao mais relevantes ao paragrafo e que nao se deve dar mais tanta importancia.</p>
+    <h2>Textos inseridos</h2>
+    <p>O contrario dos textos deletados, temos os <ins>textos inseridos</ins> que servem para indicar um ponto muito importante e que se deve ter mais atençao a ele, para isso usamos a tag "ins".</p>
+    <h2>Textos sobescritos e subscritos</h2>
+    <p>Temos tambem a tag que vai nos ajudar a colocar textos como H<Sub>2</Sub>O e X <sup>2</sup>+23 aos nossos textos, as tags "sub" e "sup" colocaram os elementos em cima ou embaixo do texto.</p>
+    <h2>Codigos Fonte e Pre-Formatado</h2>
+    <p>Temos tambem tags para colocar codigos dentro dos nossos paragrafos, como por exemplo:</p>
+    <code>num=int (input ("digite um numero"))
+        if num % 2 == 0
+         print(if 'o numero {num} é par')
+        else:
+         print (if 'o numero {num} é impar')
+        print ('Fim do pragrama')
+    </code>
+    <p>esse é um codigo em Python, a tag "code" permite que coloquemos codigos como esse dentro dos nossos textos, porem perceba que não fica facil de visulizar, nao esta no formato que o codigo foi escrito. Usando apenas a tag "code" o codigo nao fica <ins>monoespaçado</ins>, logo, cada letra tem um tamanho diferente, Para ajustar usamos a tag "pre" dentro da tag "code",para deixar o codigo do jeito que ele foi escrito e para ficar <ins>monoespaçado</ins>.
+        <code><pre>
+    num=int (input ("digite um numero"))
+    if num % 2 == 0
+    print(if 'o numero {num} é par')
+    else:
+    print (if 'o numero {num} é impar')
+    print ('Fim do pragrama')
+        </pre>
+        </code>
+    <p>Perceba que agora o codigo esta mais facil de visualizar, para alterar a posiçao ou espaçamento basta selecionar o codigo e apertar "Alt" e "Tab" para colocar mais pro canto, para colocar ligeiramente mais pro meio basta selecionar o codigo e apertar apenas "Tab"</p>
+    <h2>Citaçoes</h2>
+    <p>Para adicinar citaçoes colocamos a tag "q", ex: <br>
+        <q>Lembre-se de que você mesmo é o melhor secretário de sua tarefa</q></p>
+        <p>Voce pode tambem adicionar frases maiores e de terceiros e fazer com que o navegador saiba que aquela citaçao é de um determinado livro, ebook ou jornal, basta usar a tag "blockquote", a tag sozinha ira deslocar a citação indicando que ele é  de terceiros, para os mecanismos de busca entenderem de quem é a citaçao temos que adicinar o parametro "cite" junto da URL da citaçao, ex:<br>
+            <blockquote cite="https://www.pensador.com/textos_motivacao/"><q>Lembre-se de que você mesmo é o melhor secretário de sua tarefa, o mais eficiente propagandista de seus ideais, a mais clara demonstração de seus princípios, o mais alto padrão do ensino superior que seu espírito abraça e a mensagem viva das elevadas noções que você transmite aos outros.</q></blockquote>
+        </p>
+        <h2>Abreviaçoes</h2>
+       <p>Em Html5 podemos fazer abreviaçoes para certos tipos de palavras como o proprio <abbr title="Hyper Text Language">HTML</abbr> fazendo com que, quando passar o mouse em cima da abreviaçao o seu significado aparecera, um outro exemplo de abreviaçao... <abbr title="Cascading Style Sheets">CSS</abbr>..</p>
+    <h2>Palavras ao contrario</h2>
+    <p>Conseguimos colocar palavras ao contrario tambem, é meio inutil mas <bdo dir="rtl"><ins>da para fazer rsrs</ins></bdo>.</p>
+    basta colocar a tag "bdo" e o parametro "rtl" ou "ltr" para indicar qual direçao o texto vai inverter (rtl=Right-to-left, ltr=Left-to-right).
+    </html>
