@@ -20,7 +20,7 @@
         <p>
             <label for="ifoto">Foto do Perfil</label>
             <input type="file" name="foto" id="ifoto" accept="image/*">
-            <!--Usar apenas o accept não faz com que sejam enviados apenas fotos pelo formulario, é necessario adicionar o atributo "enctype" no <form> com o valor de "multipart/form-data" para que o servidor que recebera esses dados nao tenha dificuldades para interpretar os dados, ja que ele divide os dados enviados em varias partes cada um representando um campo do formulario, e são enviados no formato "multipart" isso é necessario pois os arquivos podem ser grandes e precisam ser enviados de maneira diferente dos dados de textos simples -->
+            <!--Usar apenas o accept não faz com que sejam enviados apenas fotos pelo formulario,para isso é preciso fazr configurações na programação back-end para garantir que será enviado apenas fotos, pdfs, etc... É necessario também adicionar o atributo "enctype" no <form> com o valor de "multipart/form-data" para envio de arquivos, para que o servidor que recebera esses dados nao tenha dificuldades para interpretar os dados. O valor "multipart/form-data" divide os dados enviados em varias partes cada um representando um campo do formulario, e são enviados no formato "multipart" isso é necessario pois os arquivos podem ser grandes e precisam ser enviados de maneira diferente dos dados de textos simples -->
         </p>
         <p>
             <input type="submit" value="Enviar">
