@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Teste de formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -16,11 +16,11 @@
             </p>
             <p>
                 <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="iemail" autocomplete="email">
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
             </p>
             <p>
                 <label for="ifone">Telefone:</label>
-                <input type="tel" name="fone" id="ifone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" autocomplete="off">
+                <input type="tel" name="fone" id="ifone" required pattern="(\(\d{2}\))(\d{4,5})-(\d{4})" placeholder="(xx)xxxxx-xxxx" autocomplete="on">
             </p>
         </fieldset>
         <!--ESTUDAR MAIS SOBRE RegEx-->
