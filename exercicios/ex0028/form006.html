@@ -23,6 +23,10 @@
             <!--Usar apenas o accept não faz com que sejam enviados apenas fotos pelo formulario,para isso é preciso fazr configurações na programação back-end para garantir que será enviado apenas fotos, pdfs, etc... É necessario também adicionar o atributo "enctype" no <form> com o valor de "multipart/form-data" para envio de arquivos, para que o servidor que recebera esses dados nao tenha dificuldades para interpretar os dados. O valor "multipart/form-data" divide os dados enviados em varias partes cada um representando um campo do formulario, e são enviados no formato "multipart" isso é necessario pois os arquivos podem ser grandes e precisam ser enviados de maneira diferente dos dados de textos simples -->
         </p>
         <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" minlength="3" maxlength="8" size="8" required pattern="[0-9]{0,8}">
+        </p>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Apagar">
         </p>
