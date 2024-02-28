@@ -27,7 +27,7 @@
         </p>
         <p>
             <label for="icell">Celulares:</label>
-            <select name="cell" id="icell" style="width:115px;">
+            <select name="cell" id="icell" style="width:115px;" required>
                 <option value="" selected disabled>--Escolha--</option>
                 <optgroup label="Xiaomi">
                     <option value="Mii">Redmi note 8</option>
@@ -49,11 +49,11 @@
         </p>
         <p>
             <label for="imsg">Mensagem <br></label>
-            <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none;" maxlength="100"></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none;" maxlength="100" required></textarea>
         </p>
         <p>
             <label for="iprof">Profissão</label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
             <datalist id="lstprof">
                 <option>administrador</option>
                 <option>desenvolvedor</option>
