@@ -9,8 +9,9 @@
     <h1>Teste de formularios</h1>
     <form action="cadastro.php" method="post">
         <p>
+            <label for="iest">Estados:</label>
             <select name="estado" id="iest" required>
-                <option value="Escolha" selected disabled>--Escolha--</option>
+                <option value="" disabled selected>--Escolha--</option>
                 <optgroup label="Região Sudeste">
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -23,7 +24,28 @@
                     <option value="MA">Maranhão</option>
                 </optgroup>
             </select>
-
+        </p>
+        <p>
+            <label for="icell">Celulares:</label>
+            <select name="cell" id="icell" style="width:115px;">
+                <option value="" selected disabled>--Escolha--</option>
+                <optgroup label="Xiaomi">
+                    <option value="Mii">Redmi note 8</option>
+                    <option value="Mii">Redemi note 12</option>
+                </optgroup>
+                <optgroup label="Samsung">
+                    <option value="Sam">Galaxy J4 Plus</option>
+                    <option value="Sam">Samsung S24 FE</option>
+                </optgroup>
+                <optgroup label="Motorola">
+                    <option value="Moto">Moto G5s Plus</option>
+                    <option value="Moto">Moto G53 5G</option>
+                </optgroup>
+                <optgroup label="Apple">
+                    <option value="Apple">Iphone Se</option>
+                    <option value="Apple">Iphone 15 Pro Max</option>
+                </optgroup>
+            </select>
         </p>
         <p>
             <label for="imsg">Mensagem <br></label>
