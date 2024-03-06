@@ -1,3 +1,80 @@
 @charset "UTF-8";
 
 /*Todas as Midiast*/
+/*Typical breakpoints
+Pequenas telas: Até 600px
+celular: de 600px ate 768px
+Tablet: de 768px ate 992pxpx
+Desktop: 992px ate 1200px
+Grandes telas:acima de 1200px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+    img#pc{display: none;}
+    img#print{display: block;}
+    body{
+        background: white url(../imagens/back-print.jpg);
+    }/*DESNECESSARIO*/
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+        text-decoration: overline;
+        width: 90vw;
+    }
+    main::after{
+        content: 'Esta impressa foi feita instruida pelo Guanabara';
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    body{
+        background: white url(../imagens/back-tablet.jpg);
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+    img#pc{display: block;}
+    img#print{display: none;}
+    body{
+        background: white url(../imagens/back-pc.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    main{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: block;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    body{
+        background: white url(../imagens/back-tv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    main{
+        width: 700px;
+    }
+}
