@@ -45,6 +45,9 @@ Grandes telas:acima de 1200px
     body{
         background: white url(../imagens/back-tablet.jpg);
     }
+    main{
+        width: 400px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px){
