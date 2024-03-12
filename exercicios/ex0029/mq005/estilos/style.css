@@ -61,6 +61,7 @@ main{
 
 main>article>h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 article>p{
     text-align: center;
